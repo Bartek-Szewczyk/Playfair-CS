@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/tlo.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="text" HorizontalAlignment="Left" Height="128" Margin="52,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Foreground="White" Background="#B2303030" FontSize="16"/>
+        <TextBox x:Name="szyfr" HorizontalAlignment="Left" Height="128" Margin="504,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" Background="#B2303030" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="key" HorizontalAlignment="Left" Height="30" Margin="528,290,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" Background="#B2303030" Foreground="White"/>
+        <Button x:Name="wykonaj" Content="Wykonaj" HorizontalAlignment="Center" Height="38" Margin="0,360,0,0" VerticalAlignment="Top" Width="127" Click="wykonaj_Click" Background="#FF4139FF" FontSize="18" FontWeight="Bold" FontFamily="Bauhaus 93"/>
+        <ComboBox x:Name="cb" HorizontalAlignment="Left" Height="33" Margin="60,313,0,0" VerticalAlignment="Top" Width="185" FontSize="16" >
+            <ComboBoxItem x:Name="szyfruj" IsSelected="True">Szyfruj</ComboBoxItem>
+            <ComboBoxItem x:Name="deszyfruj">Deszyfruj</ComboBoxItem>
+
+        </ComboBox>
+        <Label Content="Szyfr PlayFair" HorizontalAlignment="Left" Height="57" Margin="181,0,0,0" VerticalAlignment="Top" Width="408" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Bauhaus 93" FontWeight="Normal" Foreground="White"/>
+        <Label Content="Key" HorizontalAlignment="Left" Height="40" Margin="465,285,0,0" VerticalAlignment="Top" Width="58" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontWeight="Bold" Foreground="White"/>
+        <Label Content="wiadomość" HorizontalAlignment="Left" Height="37" Margin="52,93,0,0" VerticalAlignment="Top" Width="210" Foreground="White" FontSize="18" FontFamily="Bauhaus 93"/>
+        <Label Content="Szyfr" HorizontalAlignment="Left" Height="37" Margin="504,93,0,0" VerticalAlignment="Top" Width="210" Foreground="White" FontSize="20" FontFamily="Bauhaus 93"/>
+
+
 
     </Grid>
 </Window>
