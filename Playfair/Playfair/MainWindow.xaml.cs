@@ -29,9 +29,22 @@ namespace Playfair
         private void wykonaj_Click(object sender, RoutedEventArgs e)
         {
 
-            string klucz = key.Text.Replace(" ","").ToLower().Replace("j","i");
-            string tekstJawny = text.Text.Replace(" ","").ToLower().Replace("j", "i");
-            
+
+
+
+
+
+
+
+
+
+
+
+
+            szyfr.Text = "";
+            string klucz = key.Text.Replace(" ", "").ToLower().Replace("j", "i");
+            string tekstJawny = text.Text.Replace(" ", "").ToLower().Replace("j", "i");
+
 
             if (tekstJawny.Length % 2 != 0)
             {
@@ -79,7 +92,13 @@ namespace Playfair
                 }
             }
 
-            if (szyfruj.IsSelected)
+
+            if (key.Text == "" || text.Text=="")
+            {
+                MessageBox.Show("Nie podano klucza syfrującego lub treści wiadomości", "PlayFair", MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+            else if (szyfruj.IsSelected)
             {
 
 
